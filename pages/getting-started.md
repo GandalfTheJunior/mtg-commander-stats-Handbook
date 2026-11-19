@@ -8,7 +8,7 @@
 
 Application Commit: dbb150c9fa7989cdca2ba60f62ed5d74b960a2f2
 
-This Tutorial is using `zsh`commands.
+This Tutorial is using `zsh` commands.
 
 ## Cloning the Repo
 
