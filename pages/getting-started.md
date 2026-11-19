@@ -46,11 +46,11 @@ Open new Terminal Window, navigate to the frontend folder
 
 ## Open The Application in your browser
 
-Copy the Adress you see from Vite in the frontend Terminal into the Browser of your choice.
+Copy the Address you see from Vite in the frontend Terminal into the Browser of your choice.
 Create an Account, Log in and Have fun exploring mtg-commander-stats!
 
 ## Stop the Application
 
-stop the processes in the frontend and backend terminal with 'ctrl + c'
+stop the processes in the frontend and backend terminal with `ctrl + c`
 stop the running database with `docker compose stop`
-if you want to delete the volume instead use `docker compose down -v`
+if you want to delete the volume instead use (you will lose all data) `docker compose down -v`
