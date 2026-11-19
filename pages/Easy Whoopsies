@@ -1,0 +1,24 @@
+# Easily made mistakes that happened to me explained, to save you some trouble
+
+## White 504 Error Page when trying to access the App in the Browser
+
+start app in incognito browser or hard reload to empty the cache
+
+## Delete your volumes before cloning the repository
+
+If you delete the repository after you already successfully set a password for Postgres
+and then proceed to clone the repo again, the Postgres instance will
+start for the old project but try to connect with your newly cloned project as it has the
+same name.
+
+The Solution is to delete the old Postgres volume with `docker compose down -v` from your
+project root directory. Afterwards you can start over with Setting up the database Password.
+
+## Bash vs zsh
+
+The README of mtg-commander-stats uses bash. If you are on zsh like me, you need to check
+some commands for compatibility. This Handbook uses zsh because it was written by me, the
+human PO, while the docs in the main project are written by AI agents.
+
+README (Bash): `read -r -s -p 'Local PostgreSQL password: ' POSTGRES_PASSWORD`
+Handbook (zsh): 'read -rs "POSTGRES_PASSWORD?Local PostgreSQL password:"
